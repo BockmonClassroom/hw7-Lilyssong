@@ -9,3 +9,53 @@ Grading (Out of 100 points)
 
 How to turn in
 Turn in the final report and code that you wrote to Githbub
+
+
+# 🎵 HW7 - Clustering Analysis with Spotify-YouTube Data
+
+This project explores clustering techniques (K-Means and Hierarchical Clustering) on 3D musical features from the Spotify-YouTube dataset.
+
+## 📁 Dataset
+
+Used features:
+- `Liveness`
+- `Energy`
+- `Loudness`
+
+Source: `data/Spotify_Youtube.csv`
+
+---
+
+## 📌 Task Summary
+
+1. **Preprocessing**: Cleaned and standardized the selected features.
+2. **K-Means Clustering**:
+   - Used the elbow method to find the optimal number of clusters (K=4).
+   - Visualized results in a 3D scatter plot.
+3. **Hierarchical Clustering**:
+   - Applied Ward linkage.
+   - Visualized using both dendrogram and 3D scatter plot.
+
+---
+
+## 📈 Visualizations
+
+- Elbow plot (to select K)
+- 3D K-Means clustering result
+- Dendrogram (hierarchical structure)
+- 3D Hierarchical clustering result
+
+---
+
+## 📊 Interpretation
+
+Clusters identified meaningful groupings in songs with similar loudness, energy, and liveness traits. This can be useful for music classification, playlist curation, or recommendation systems.
+
+See the notebook `HW7_KMeans_Hierarchical_Clustering.ipynb` for full analysis and visualizations.
+
+---
+
+## 🚀 How to Run
+
+```bash
+pip install pandas matplotlib scikit-learn scipy
